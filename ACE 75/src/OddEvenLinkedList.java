@@ -1,5 +1,5 @@
 public class OddEvenLinkedList {
-    public ListNode oddEvenList(ListNode head) {
+//    public ListNode oddEvenList(ListNode head) {
 //        var current = head;
 //        int size = 1;
 //        while(current.next != null) {
@@ -24,5 +24,5 @@ public class OddEvenLinkedList {
 //        }
 //
 //        return head;
-    }
+//    }
 }
