@@ -2,10 +2,11 @@
 public class Main {
     public static void main(String[] args) {
 
-        var ass = new MaximumSubsequenceScore();
-        int[] sum = {1,3,3,2};
-        int[] prod = {2,1,3,4};
-        ass.maxScore(sum, prod, 3);
+        var ass = new PlaceFlowers();
+        int[] flowerbed = {0, 0, 1, 0, 0, 1, 0, 0};
+        int n = 2;
+        System.out.println( ass.canPlaceFlowers(flowerbed, n));
+
 
     }
 }

@@ -1,6 +1,6 @@
 public class PlaceFlowers {
-    public static boolean canPlaceFlowers(int[] flowerbed, int n) {
-        int zeros = 0, spots = 0,size = 0, length = flowerbed.length;
+    public boolean canPlaceFlowers(int[] flowerbed, int n) {
+        int zeros = 0, spots = 0, size = 0, length = flowerbed.length;
 
         for(var flower: flowerbed) {
             if (flower == 1){
@@ -21,5 +21,4 @@ public class PlaceFlowers {
 
         return spots >= n;
     }
-
 }
