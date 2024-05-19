@@ -2,9 +2,9 @@
 public class Main {
     public static void main(String[] args) {
 
-        var ass = new LongestCommonSubsequence();
-        System.out.println(ass.longestCommonSubsequence("ezupkr", "ubmrapg"));
+        var num = new SingleNumber();
 
-
+        int[] a = {2,2,1};
+        num.singleNumber(a);
     }
 }
