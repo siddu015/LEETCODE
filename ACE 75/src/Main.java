@@ -6,7 +6,5 @@ public class Main {
 
         int[] a = {2,2,1};
         num.singleNumber(a);
-        dg'
-    v'sdf
     }
 }
