@@ -1,33 +1,10 @@
-import java.util.Stack;
+import java.lang.reflect.Array;
 
 public class temp {
-    public String decodeString(String s) {
-        Stack<Integer> stackI = new Stack<>();
-        Stack<Character> stackS = new Stack<>();
-        StringBuilder sb = new StringBuilder();
-        int n = 0;
+    public static void main(String[] args) {
 
-        for(char c: s.toCharArray()) {
-            if(Character.isDigit(c)) {
-                n = n * 10 + (c - '0');
-                stackI.push(n);
-            }
-            else {
-                stackS.push(c);
-                n = 0;
-            }
-        }
+            int[][] arr = new int[3][3];
+            Array.getLength(arr);
 
-        var value = 0;
-        char c;
-
-        while(!stackS.isEmpty() && !stackI.isEmpty()) {
-            value = stackI.pop();
-            c = stackS.pop();
-            for(var i = 0; i < value; i++)
-                sb.append(c);
-        }
-
-        return sb.reverse().toString();
     }
 }
