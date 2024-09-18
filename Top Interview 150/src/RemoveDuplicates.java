@@ -9,11 +9,8 @@ public class RemoveDuplicates {
         int uniqueIndex = 0;
 
         for (int i = 1; i < nums.length; i++) {
-
-            if (nums[i] != nums[uniqueIndex]) {
+            if (nums[i] != nums[uniqueIndex])
                 nums[++uniqueIndex] = nums[i];
-            }
-
         }
 
         return uniqueIndex + 1;
