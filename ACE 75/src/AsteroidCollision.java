@@ -19,7 +19,7 @@ public class AsteroidCollision {
 
         int[] result = new int[j];
         System.arraycopy(asteroids, 0, result, 0, j);
-
+        System.arraycopy("\n");
         return result;
     }
 }
