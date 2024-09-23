@@ -26,5 +26,6 @@ public class RandomizedSet {
 
         int random = (int)(Math.random() * length);
         return arr[random];
+
     }
 }
