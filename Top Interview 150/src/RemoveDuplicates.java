@@ -1,10 +1,6 @@
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
-
 public class RemoveDuplicates {
-    public int removeDuplicates(int[] nums) {
-        if (nums.length == 0) return 0;
+    public void removeDuplicates(int[] nums) {
+        if (nums.length == 0) return;
 
         int uniqueIndex = 0;
 
@@ -13,6 +9,5 @@ public class RemoveDuplicates {
                 nums[++uniqueIndex] = nums[i];
         }
 
-        return uniqueIndex + 1;
     }
 }
