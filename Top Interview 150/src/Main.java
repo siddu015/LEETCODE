@@ -8,7 +8,6 @@ public class Main {
         String[] words =  {"Science","is","what","we","understand","well","enough","to","explain","to","a","computer.","Art","is","everything","else","we","do"};
         int maxWidth = 20;
 
-
         long[] nums = {2, 5, 1, 3, 4};
         long res = getInversions(nums, 5);
         System.out.println(res);
