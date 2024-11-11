@@ -72,12 +72,6 @@ public class Main {
     }
 
     public static long inversions = 0;
-    public static long getInversions(long[] arr, int n) {
-
-        sort(arr, 0, n - 1);
-
-        return inversions;
-    }
 
     static void sort(long[] arr, int l, int r)
     {
