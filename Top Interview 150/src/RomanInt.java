@@ -28,22 +28,22 @@ public class RomanInt {
             if (s.charAt(i) == 'X' && i < len - 1) {
                 if(s.charAt(i+1)=='L') {
                     result += 40;
-                    i++; continue;;
+                    i++; continue;
                 }
                 if(s.charAt(i+1)=='C') {
                     result += 90;
-                    i++; continue;;
+                    i++; continue;
                 }
             }
 
             if (s.charAt(i) == 'C' && i < len - 1) {
                 if(s.charAt(i+1)=='D') {
                     result += 40;
-                    i++; continue;;
+                    i++; continue;
                 }
                 if(s.charAt(i+1)=='M') {
                     result += 90;
-                    i++; continue;;
+                    i++; continue;
                 }
             }
 
