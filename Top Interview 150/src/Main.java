@@ -5,11 +5,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-        var text = new TextJustification();
-        String[] words = {"Science", "is", "what", "we", "understand", "well", "enough", "to", "explain", "to", "a", "computer.", "Art", "is", "everything", "else", "we", "do"};
-        int maxWidth = 20;
+        int[] nums = {3,2,3};
 
-        long[] nums = {2, 5, 1, 3, 4};
+        System.out.println(majorityElement(nums));
     }
 
     public static void setZeroes(int[][] matrix) {
@@ -66,5 +64,23 @@ public class Main {
                 matrix[i][0] = 0;
             }
         }
+    }
+
+    public static int majorityElement(int[] nums) {
+        Hashtable<Integer, Integer> dict= new Hashtable<>();
+        int max = 0, result = 0;
+        for (int num : nums) {
+            if (dict.containsKey(num))
+                dict.put(num, dict.get(num) + 1);
+            else
+                dict.put(num, 1);
+
+            if(dict.get(num) > max) {
+                max = dict.get(num);
+                result = num;
+            }
+        }
+
+        return result;
     }
 }
